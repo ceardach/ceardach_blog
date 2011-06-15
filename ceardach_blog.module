@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Code for the Blog feature.
+ */
+
+include_once('ceardach_blog.features.inc');
+
+/**
+ * Implementation of hook_block_view_BLOCK_DELTA_alter().
+ */
+function ceardach_blog_block_view_tagadelic_1_alter(&$data, $block) {
+  // Changing the title of the tagdelic block
+  $data['subject'] = 'topics';
+}
