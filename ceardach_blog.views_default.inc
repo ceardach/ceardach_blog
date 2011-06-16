@@ -791,13 +791,6 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_file']['delta_reversed'] = 0;
   $handler->display->display_options['fields']['field_file']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Fields: Files (field_file) - fid */
   $handler->display->display_options['filters']['field_file_fid']['id'] = 'field_file_fid';
   $handler->display->display_options['filters']['field_file_fid']['table'] = 'field_data_field_file';
@@ -837,13 +830,6 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_link']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_link']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Fields: Related Links (field_link) - url */
   $handler->display->display_options['filters']['field_link_url']['id'] = 'field_link_url';
   $handler->display->display_options['filters']['field_link_url']['table'] = 'field_data_field_link';
@@ -883,13 +869,6 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_topic']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_topic']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Fields: Topics (field_topic) - tid */
   $handler->display->display_options['filters']['field_topic_tid']['id'] = 'field_topic_tid';
   $handler->display->display_options['filters']['field_topic_tid']['table'] = 'field_data_field_topic';

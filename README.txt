@@ -41,6 +41,7 @@ Required contributed modules:
   * context
   * strongarm
   * ctools
+  * link
   * pathauto
   * tagadelic
 
