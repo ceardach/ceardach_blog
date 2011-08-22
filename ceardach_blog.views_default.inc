@@ -26,6 +26,7 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
@@ -51,10 +52,10 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
@@ -253,11 +254,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
   $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
@@ -274,11 +275,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['created']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['created']['alter']['external'] = 0;
   $handler->display->display_options['fields']['created']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['created']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['created']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['created']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['created']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['created']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['created']['alter']['html'] = 0;
   $handler->display->display_options['fields']['created']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['created']['element_default_classes'] = 1;
@@ -295,11 +296,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['changed']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['external'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['changed']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['changed']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['changed']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['html'] = 0;
   $handler->display->display_options['fields']['changed']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['changed']['element_default_classes'] = 1;
@@ -315,11 +316,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['status']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['status']['alter']['external'] = 0;
   $handler->display->display_options['fields']['status']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['status']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['status']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['status']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['status']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['status']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['status']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['status']['alter']['html'] = 0;
   $handler->display->display_options['fields']['status']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['status']['element_default_classes'] = 1;
@@ -336,11 +337,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['comment_count']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['comment_count']['alter']['external'] = 0;
   $handler->display->display_options['fields']['comment_count']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['comment_count']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['comment_count']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['comment_count']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['comment_count']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['comment_count']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['comment_count']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['comment_count']['alter']['html'] = 0;
   $handler->display->display_options['fields']['comment_count']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['comment_count']['element_default_classes'] = 1;
@@ -357,11 +358,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['totalcount']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['totalcount']['alter']['external'] = 0;
   $handler->display->display_options['fields']['totalcount']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['totalcount']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['totalcount']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['totalcount']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['totalcount']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['totalcount']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['totalcount']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['totalcount']['alter']['html'] = 0;
   $handler->display->display_options['fields']['totalcount']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['totalcount']['element_default_classes'] = 1;
@@ -378,11 +379,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['edit_node']['alter']['external'] = 0;
   $handler->display->display_options['fields']['edit_node']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['edit_node']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['edit_node']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['edit_node']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['edit_node']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['edit_node']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['edit_node']['alter']['html'] = 0;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['edit_node']['element_default_classes'] = 1;
@@ -421,39 +422,6 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['menu']['title'] = 'Manage my blogs';
   $handler->display->display_options['menu']['description'] = 'Manage my blog posts';
   $handler->display->display_options['menu']['weight'] = '0';
-  $translatables['blog'] = array(
-    t('Master'),
-    t('Blog'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('Empty text'),
-    t('There were no blog posts for this time period.'),
-    t('All'),
-    t('Blogs for %1'),
-    t('%1'),
-    t('Blogs for %2, %1'),
-    t('%2, %1'),
-    t('Published'),
-    t('Page'),
-    t('Feed'),
-    t('Popular'),
-    t('Popular Posts'),
-    t('Manage'),
-    t('Created'),
-    t('Updated'),
-    t('Comments'),
-    t('.'),
-    t(','),
-    t('Views'),
-    t('Edit'),
-  );
   $export['blog'] = $view;
 
   $view = new view;
@@ -473,6 +441,7 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -500,11 +469,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['comment_body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['comment_body']['alter']['external'] = 0;
   $handler->display->display_options['fields']['comment_body']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['comment_body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['comment_body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['comment_body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['comment_body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['comment_body']['alter']['strip_tags'] = 1;
+  $handler->display->display_options['fields']['comment_body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['comment_body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['comment_body']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['comment_body']['element_default_classes'] = 1;
@@ -525,11 +494,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['view_comment']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['view_comment']['alter']['external'] = 0;
   $handler->display->display_options['fields']['view_comment']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['view_comment']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['view_comment']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['view_comment']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['view_comment']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['view_comment']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['view_comment']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['view_comment']['alter']['html'] = 0;
   $handler->display->display_options['fields']['view_comment']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['view_comment']['element_default_classes'] = 1;
@@ -546,11 +515,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['created']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['created']['alter']['external'] = 0;
   $handler->display->display_options['fields']['created']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['created']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['created']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['created']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['created']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['created']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['created']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['created']['alter']['html'] = 0;
   $handler->display->display_options['fields']['created']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['created']['element_default_classes'] = 1;
@@ -568,11 +537,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
   $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
@@ -601,7 +570,6 @@ function ceardach_blog_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['items_per_page'] = FALSE;
   $handler->display->display_options['path'] = 'blog/comments/recent';
 
   /* Display: Block */
@@ -613,25 +581,6 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['block_description'] = 'Recent comments';
-  $translatables['blog_comments'] = array(
-    t('Master'),
-    t('Recent comments'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('Content'),
-    t('Read more'),
-    t('Posted on'),
-    t('in reply to'),
-    t('Page'),
-    t('Block'),
-  );
   $export['blog_comments'] = $view;
 
   $view = new view;
@@ -651,6 +600,7 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -666,11 +616,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_file']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_file']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_file']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_file']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_file']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_file']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_file']['element_default_classes'] = 1;
@@ -692,11 +642,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_link']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_link']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_link']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_link']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_link']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_link']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_link']['element_default_classes'] = 1;
@@ -718,17 +668,16 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_topic']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_topic']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_topic']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_topic']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_topic']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_topic']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_topic']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_topic']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_topic']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_topic']['click_sort_column'] = 'tid';
   $handler->display->display_options['fields']['field_topic']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_topic']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_topic']['delta_reversed'] = 0;
@@ -774,11 +723,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_file']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_file']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_file']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_file']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_file']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_file']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_file']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_file']['element_default_classes'] = 1;
@@ -791,7 +740,7 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_file']['delta_reversed'] = 0;
   $handler->display->display_options['fields']['field_file']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Fields: Files (field_file) - fid */
+  /* Filter criterion: Content: Files (field_file:fid) */
   $handler->display->display_options['filters']['field_file_fid']['id'] = 'field_file_fid';
   $handler->display->display_options['filters']['field_file_fid']['table'] = 'field_data_field_file';
   $handler->display->display_options['filters']['field_file_fid']['field'] = 'field_file_fid';
@@ -813,11 +762,11 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_link']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_link']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_link']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_link']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_link']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_link']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_link']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_link']['element_default_classes'] = 1;
@@ -830,7 +779,7 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_link']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_link']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Fields: Related Links (field_link) - url */
+  /* Filter criterion: Content: Related Links (field_link:url) */
   $handler->display->display_options['filters']['field_link_url']['id'] = 'field_link_url';
   $handler->display->display_options['filters']['field_link_url']['table'] = 'field_data_field_link';
   $handler->display->display_options['filters']['field_link_url']['field'] = 'field_link_url';
@@ -852,46 +801,29 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['fields']['field_topic']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_topic']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_topic']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_topic']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_topic']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_topic']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_topic']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['field_topic']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_topic']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_topic']['empty_zero'] = 1;
-  $handler->display->display_options['fields']['field_topic']['click_sort_column'] = 'tid';
   $handler->display->display_options['fields']['field_topic']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_topic']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_topic']['delta_reversed'] = 0;
   $handler->display->display_options['fields']['field_topic']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_topic']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Fields: Topics (field_topic) - tid */
+  /* Filter criterion: Content: Topics (field_topic) */
   $handler->display->display_options['filters']['field_topic_tid']['id'] = 'field_topic_tid';
   $handler->display->display_options['filters']['field_topic_tid']['table'] = 'field_data_field_topic';
   $handler->display->display_options['filters']['field_topic_tid']['field'] = 'field_topic_tid';
   $handler->display->display_options['filters']['field_topic_tid']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_topic_tid']['vocabulary'] = 'topics';
   $handler->display->display_options['block_description'] = 'Related Topics';
-  $translatables['blog_relatedfields'] = array(
-    t('Master'),
-    t('blog_relatedfields'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('All'),
-    t('Attached Files'),
-    t('Related Links'),
-    t('Related Topics'),
-  );
   $export['blog_relatedfields'] = $view;
 
   return $export;
