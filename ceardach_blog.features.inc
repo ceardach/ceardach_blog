@@ -38,7 +38,7 @@ function ceardach_blog_image_default_styles() {
   $styles['blog_body'] = array(
     'name' => 'blog_body',
     'effects' => array(
-      1 => array(
+      5 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -47,7 +47,7 @@ function ceardach_blog_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '250',
+          'width' => '300',
           'height' => '',
           'upscale' => 1,
         ),
@@ -82,7 +82,7 @@ function ceardach_blog_image_default_styles() {
   $styles['blog_teaser'] = array(
     'name' => 'blog_teaser',
     'effects' => array(
-      2 => array(
+      6 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -91,7 +91,7 @@ function ceardach_blog_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '150',
+          'width' => '200',
           'height' => '',
           'upscale' => 0,
         ),
