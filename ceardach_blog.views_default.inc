@@ -745,6 +745,20 @@ function ceardach_blog_views_default_views() {
   $handler->display->display_options['filters']['field_file_fid']['table'] = 'field_data_field_file';
   $handler->display->display_options['filters']['field_file_fid']['field'] = 'field_file_fid';
   $handler->display->display_options['filters']['field_file_fid']['operator'] = 'not empty';
+  /* Filter criterion: Content: Files (field_file:display) */
+  $handler->display->display_options['filters']['field_file_display']['id'] = 'field_file_display';
+  $handler->display->display_options['filters']['field_file_display']['table'] = 'field_data_field_file';
+  $handler->display->display_options['filters']['field_file_display']['field'] = 'field_file_display';
+  $handler->display->display_options['filters']['field_file_display']['operator'] = '!=';
+  $handler->display->display_options['filters']['field_file_display']['value']['value'] = '0';
+  $handler->display->display_options['filters']['field_file_display']['expose']['operator_id'] = 'field_file_display_op';
+  $handler->display->display_options['filters']['field_file_display']['expose']['label'] = 'Files (field_file:display)';
+  $handler->display->display_options['filters']['field_file_display']['expose']['use_operator'] = FALSE;
+  $handler->display->display_options['filters']['field_file_display']['expose']['operator'] = 'field_file_display_op';
+  $handler->display->display_options['filters']['field_file_display']['expose']['identifier'] = 'field_file_display';
+  $handler->display->display_options['filters']['field_file_display']['expose']['required'] = FALSE;
+  $handler->display->display_options['filters']['field_file_display']['expose']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_file_display']['expose']['multiple'] = FALSE;
   $handler->display->display_options['block_description'] = 'Attached Files';
 
   /* Display: Related Links */
